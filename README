@@ -1,0 +1,23 @@
+This code very closely matches the lecture slides example.
+
+(I can't help but "refactor" every time I touch this code!)
+
+(And I've combined related classes into single files to keep the
+number of files small. So all Node classes are in the 
+one Node.java file.)
+
+But it works. Just do 2 steps:
+1. Compile everything: javac *.java
+2. Run main: java Client
+
+Want to fiddle a bit to learn? Try:
+1. current tree built is 3 nodes, maybe add a 4th and 5th?
+2. add println to traverser to "see" the order of the traversal
+3. add a different traversal method
+   3a. perhaps a DepthFirstTraversal, "stack up the left side first
+       then the current node, then the right side"
+4. add a different Node type
+   4a. maybe a StringNode 
+5. add a different Visitor purpose: 
+   5a. total all the IntNodes
+   5b. concatenating all String nodes (if did 4a above)
